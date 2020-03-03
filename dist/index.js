@@ -6,12 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const app = express_1.default();
 const add = (a, b) => a + b;
-class Movies {
-    get() { }
-}
-(req, res, next) => {
+app.get('/', (req, res, next) => {
     console.log(add(5, 6));
-    res.send('Welcome to the home page');
-};
-;
+    res.send('hello fine user');
+});
 app.listen(5000, () => console.log('server running'));

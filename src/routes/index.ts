@@ -4,10 +4,12 @@ const app: Application = express();
 
 const add = (a: number, b: number): number => a +b;
 
-class Movies{
 app.get('/', (req: Request, res: Response, next: NextFunction) => {
     console.log(add(5,6))
-    res.send('hello');
+    res.send('hello fine user');
 });
 
 app.listen(5000, () => console.log('server running'));
+
+
+(req: Request, res: Response, next: NextFunction)
